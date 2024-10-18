@@ -8,7 +8,7 @@ dotenv.config();
 
 const TOKEN = process.env.TOKEN;
 const PORT = process.env.PORT || 5000;
-const POLLING_INTERVAL = 10 * 60 * 1000; // Poll every 10 minutes
+const POLLING_INTERVAL = 3 * 60 * 1000; // Poll every 10 minutes
 
 const app = express();
 const bot = new TelegramBot(TOKEN, { polling: true });
