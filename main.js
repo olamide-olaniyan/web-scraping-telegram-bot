@@ -48,6 +48,11 @@ async function fetchUpworkJobs() {
           gotScrapingRes.body.data?.search?.universalSearchNuxt
             ?.visitorJobSearchV1;
 
+        if (!results || results.length === 0) {
+          console.error("No results found or error in response structure.");
+          return;
+        }
+
         let existingJobs = [];
         try {
           const data = fs.readFileSync("latestJobs.json", "utf8");
