@@ -66,6 +66,13 @@ async function fetchUpworkJobs() {
           (job) => !existingJobs.some((eJob) => eJob.id === job.id)
         );
 
+        // Sort new jobs by publishTime (ascending order)
+        newJobs.sort(
+          (a, b) =>
+            new Date(a.jobTile.job.publishTime) -
+            new Date(b.jobTile.job.publishTime)
+        );
+
         if (newJobs.length > 0) {
           // Append new jobs to existing ones and save to file
           const updatedJobs = [...newJobs, ...existingJobs];
