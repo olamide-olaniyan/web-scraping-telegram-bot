@@ -75,6 +75,13 @@ async function fetchUpworkJobs() {
           // Send new jobs to Telegram
           newJobs.forEach((job) => {
             const message = formatJobForTelegram(job);
+            const cleanedTitle =
+              job.title
+                .replace(/H\^|\^H/g, "") // Remove H^ and ^H
+                .trim()
+                .replace(/\s+/g, "-") + "_";
+
+            const jobUrl = `https://www.upwork.com/freelance-jobs/apply/${cleanedTitle}${job.jobTile.job.ciphertext}`;
             bot
               .sendMessage(CHANNEL_ID, message, {
                 parse_mode: "HTML",
@@ -84,7 +91,7 @@ async function fetchUpworkJobs() {
                     [
                       {
                         text: "Apply",
-                        url: `https://www.upwork.com/job/${job.id}`,
+                        url: jobUrl,
                       },
                     ],
                   ],
@@ -117,10 +124,16 @@ async function fetchUpworkJobs() {
 
 // Function to format job data for Telegram
 function formatJobForTelegram(job) {
-  const jobUrl = `https://www.upwork.com/job/${job.id}`;
-
+  const title = job.title.replace(/H\^|\^H/g, "");
   // Correct the replacement pattern for both H^ and ^H
-  const title = job.title.replace(/H\^|\^H/g, ""); // Remove both H^ and ^H characters
+  const cleanedTitle =
+    job.title
+      .replace(/H\^|\^H/g, "") // Remove H^ and ^H
+      .trim()
+      .replace(/\s+/g, "-") + "_";
+
+  const jobUrl = `https://www.upwork.com/freelance-jobs/apply/${cleanedTitle}${job.jobTile.job.ciphertext}`;
+
   let description = job.description.replace(/H\^|\^H/g, ""); // Remove both H^ and ^H characters
   if (description.length > 3600) {
     description = description.substring(0, 3600) + "..."; // Limit to 300 characters
