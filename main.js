@@ -2,6 +2,7 @@ import TelegramBot from "node-telegram-bot-api";
 import express from "express";
 import { gotScraping } from "got-scraping";
 import fs from "graceful-fs";
+import pRetry from "p-retry";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -24,73 +25,91 @@ app.listen(PORT, () => {
 // Function to fetch jobs from Upwork
 async function fetchUpworkJobs() {
   try {
-    const offset = 0;
-    const count = 50;
-    const CHANNEL_ID = "@web_scraping_jobs";
+    await pRetry(
+      async () => {
+        const offset = 0;
+        const count = 50;
+        const CHANNEL_ID = "@web_scraping_jobs";
 
-    const gotScrapingRes = await gotScraping(
-      "https://www.upwork.com/api/graphql/v1?alias=visitorJobSearch",
+        const gotScrapingRes = await gotScraping(
+          "https://www.upwork.com/api/graphql/v1?alias=visitorJobSearch",
+          {
+            responseType: "json",
+            body: `{"query":"\\n  query VisitorJobSearch($requestVariables: VisitorJobSearchV1Request!) {\\n    search {\\n      universalSearchNuxt {\\n        visitorJobSearchV1(request: $requestVariables) {\\n          paging {\\n            total\\n            offset\\n            count\\n          }\\n          \\n    facets {\\n      jobType \\n    {\\n      key\\n      value\\n    }\\n  \\n      workload \\n    {\\n      key\\n      value\\n    }\\n  \\n      clientHires \\n    {\\n      key\\n      value\\n    }\\n  \\n      durationV3 \\n    {\\n      key\\n      value\\n    }\\n  \\n      amount \\n    {\\n      key\\n      value\\n    }\\n  \\n      contractorTier \\n    {\\n      key\\n      value\\n    }\\n  \\n      contractToHire \\n    {\\n      key\\n      value\\n    }\\n  \\n      \\n    }\\n  \\n          results {\\n            id\\n            title\\n            description\\n            relevanceEncoded\\n            ontologySkills {\\n              uid\\n              parentSkillUid\\n              prefLabel\\n              prettyName: prefLabel\\n              freeText\\n              highlighted\\n            }\\n            \\n            jobTile {\\n              job {\\n                id\\n                ciphertext: cipherText\\n                jobType\\n                weeklyRetainerBudget\\n                hourlyBudgetMax\\n                hourlyBudgetMin\\n                hourlyEngagementType\\n                contractorTier\\n                sourcingTimestamp\\n                createTime\\n                publishTime\\n                \\n                hourlyEngagementDuration {\\n                  rid\\n                  label\\n                  weeks\\n                  mtime\\n                  ctime\\n                }\\n                fixedPriceAmount {\\n                  isoCurrencyCode\\n                  amount\\n                }\\n                fixedPriceEngagementDuration {\\n                  id\\n                  rid\\n                  label\\n                  weeks\\n                  ctime\\n                  mtime\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n  ","variables":{"requestVariables":{"ontologySkillUid":["1031626730405085184"],"userQuery":"web scraping","sort":"recency","highlight":true,"paging":{"offset":${offset},"count":${count}}}}}`,
+            method: "POST",
+            headers: {
+              authorization: "Bearer oauth2v2_3e59d03dbfea55bcc71653267c5f556a",
+              "content-type": "application/json",
+            },
+          }
+        );
+
+        const { results } =
+          gotScrapingRes.body.data?.search?.universalSearchNuxt
+            ?.visitorJobSearchV1;
+
+        let existingJobs = [];
+        try {
+          const data = fs.readFileSync("latestJobs.json", "utf8");
+          existingJobs = JSON.parse(data);
+        } catch (error) {
+          console.log("No existing jobs file found. Creating a new one.");
+        }
+
+        // Filter out jobs that are already in the latestJobs.json
+        const newJobs = results.filter(
+          (job) => !existingJobs.some((eJob) => eJob.id === job.id)
+        );
+
+        if (newJobs.length > 0) {
+          // Append new jobs to existing ones and save to file
+          const updatedJobs = [...newJobs, ...existingJobs];
+          // Limit the number of job items to 50
+          const limitedJobs = updatedJobs.slice(0, 50);
+          fs.writeFileSync(
+            "latestJobs.json",
+            JSON.stringify(limitedJobs, null, 2)
+          );
+          console.log(`${newJobs.length} new jobs added.`);
+
+          // Send new jobs to Telegram
+          newJobs.forEach((job) => {
+            const message = formatJobForTelegram(job);
+            bot
+              .sendMessage(CHANNEL_ID, message, {
+                parse_mode: "HTML",
+                disable_web_page_preview: true,
+                reply_markup: {
+                  inline_keyboard: [
+                    [
+                      {
+                        text: "Apply",
+                        url: `https://www.upwork.com/job/${job.id}`,
+                      },
+                    ],
+                  ],
+                },
+              })
+              .catch((error) =>
+                console.error("Error sending message to channel:", error)
+              );
+          });
+          console.log(`${newJobs.length} jobs sent to telegram successfully`);
+        } else {
+          console.log("No new jobs found.");
+        }
+      },
       {
-        responseType: "json",
-        body: `{"query":"\\n  query VisitorJobSearch($requestVariables: VisitorJobSearchV1Request!) {\\n    search {\\n      universalSearchNuxt {\\n        visitorJobSearchV1(request: $requestVariables) {\\n          paging {\\n            total\\n            offset\\n            count\\n          }\\n          \\n    facets {\\n      jobType \\n    {\\n      key\\n      value\\n    }\\n  \\n      workload \\n    {\\n      key\\n      value\\n    }\\n  \\n      clientHires \\n    {\\n      key\\n      value\\n    }\\n  \\n      durationV3 \\n    {\\n      key\\n      value\\n    }\\n  \\n      amount \\n    {\\n      key\\n      value\\n    }\\n  \\n      contractorTier \\n    {\\n      key\\n      value\\n    }\\n  \\n      contractToHire \\n    {\\n      key\\n      value\\n    }\\n  \\n      \\n    }\\n  \\n          results {\\n            id\\n            title\\n            description\\n            relevanceEncoded\\n            ontologySkills {\\n              uid\\n              parentSkillUid\\n              prefLabel\\n              prettyName: prefLabel\\n              freeText\\n              highlighted\\n            }\\n            \\n            jobTile {\\n              job {\\n                id\\n                ciphertext: cipherText\\n                jobType\\n                weeklyRetainerBudget\\n                hourlyBudgetMax\\n                hourlyBudgetMin\\n                hourlyEngagementType\\n                contractorTier\\n                sourcingTimestamp\\n                createTime\\n                publishTime\\n                \\n                hourlyEngagementDuration {\\n                  rid\\n                  label\\n                  weeks\\n                  mtime\\n                  ctime\\n                }\\n                fixedPriceAmount {\\n                  isoCurrencyCode\\n                  amount\\n                }\\n                fixedPriceEngagementDuration {\\n                  id\\n                  rid\\n                  label\\n                  weeks\\n                  ctime\\n                  mtime\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n  ","variables":{"requestVariables":{"ontologySkillUid":["1031626730405085184"],"userQuery":"web scraping","sort":"recency","highlight":true,"paging":{"offset":${offset},"count":${count}}}}}`,
-        method: "POST",
-        headers: {
-          authorization: "Bearer oauth2v2_3e59d03dbfea55bcc71653267c5f556a",
-          "content-type": "application/json",
+        retries: 3, // Number of retry attempts
+        minTimeout: 1000, // Wait 1 second before retrying
+        onFailedAttempt: (error) => {
+          console.error(
+            `Attempt ${error.attemptNumber} failed. Retrying...`,
+            error
+          );
         },
       }
     );
-
-    const { results } =
-      gotScrapingRes.body.data.search.universalSearchNuxt.visitorJobSearchV1;
-
-    let existingJobs = [];
-    try {
-      const data = fs.readFileSync("latestJobs.json", "utf8");
-      existingJobs = JSON.parse(data);
-    } catch (error) {
-      console.log("No existing jobs file found. Creating a new one.");
-    }
-
-    // Filter out jobs that are already in the latestJobs.json
-    const newJobs = results.filter(
-      (job) => !existingJobs.some((eJob) => eJob.id === job.id)
-    );
-
-    if (newJobs.length > 0) {
-      // Append new jobs to existing ones and save to file
-      const updatedJobs = [...newJobs, ...existingJobs];
-      // Limit the number of job items to 50
-      const limitedJobs = updatedJobs.slice(0, 50);
-      fs.writeFileSync("latestJobs.json", JSON.stringify(limitedJobs, null, 2));
-      console.log(`${newJobs.length} new jobs added.`);
-
-      // Send new jobs to Telegram
-      newJobs.forEach((job) => {
-        const message = formatJobForTelegram(job);
-        bot
-          .sendMessage(CHANNEL_ID, message, {
-            parse_mode: "HTML",
-            disable_web_page_preview: true,
-            reply_markup: {
-              inline_keyboard: [
-                [
-                  {
-                    text: "Apply",
-                    url: `https://www.upwork.com/job/${job.id}`,
-                  },
-                ],
-              ],
-            },
-          })
-          .catch((error) =>
-            console.error("Error sending message to channel:", error)
-          );
-      });
-      console.log(`${newJobs.length} jobs sent to telegram successfully`);
-    } else {
-      console.log("No new jobs found.");
-    }
   } catch (error) {
     console.error("Error fetching Upwork jobs:", error);
   }

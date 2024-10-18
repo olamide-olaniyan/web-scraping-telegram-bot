@@ -1,5 +1,497 @@
 [
   {
+    "id": "1847242915104536047",
+    "title": "Source, format and save 500 company logos + brand colors",
+    "description": "We need help with sourcing and uniformly saving logos of 503 companies and identifying + capturing the HEX value of their main brand color in a spreadsheet.\n\nThe task is based on the attached spreadsheet, which contains a list of 503 unique companies (some of them appear more than once). We need square 400×400 images of the companies' logos centered / formatted and saved as PNG and we also need the HEX value of the companies' primary brand color from their H^website^H.\n\nWorkflow:\n\nLOGO: You would grab the logo from their Facebook or Twitter profile, or their H^website^H (links in the spreadsheet), drop it into a square canvas in Photoshop, Figma or editor of your choice, make sure it is centered, has a bit of space around it and save it as a PNG file with the filename provided (equal to the domain name of the company's H^website^H)\n\nBRAND COLOR: You would visit the company's H^website^H, identify their main brand color and grab the HEX color value (There are many Chrome extensions with a color picker, or use this one on Mac https://apps.apple.com/us/app/handypalette/id1515022667?mt=12) and paste it into the spreadsheet.\n\nPlease see the spreadsheet and attached two logo images for examples of this done for two of the first companies in the list.\n\nThe deliverables are:\n– ZIP file with 503 400×400 PNG logo images named correctly with company's domain\n– spreadsheet with the logo file name and brand HEX color value columns completed\n\nFeel free to go through the workflow for a couple of companies to estimate how long this task will take you, to bid accordingly.\n\nThank you.",
+    "relevanceEncoded": "{\"position\":\"0\"}",
+    "ontologySkills": [
+      {
+        "uid": "1031626730405085184",
+        "parentSkillUid": null,
+        "prefLabel": "Data Scraping",
+        "prettyName": "Data Scraping",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1031626742929276928",
+        "parentSkillUid": null,
+        "prefLabel": "Graphic Design",
+        "prettyName": "Graphic Design",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626730136649728",
+        "parentSkillUid": null,
+        "prefLabel": "Data Entry",
+        "prettyName": "Data Entry",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626730287644672",
+        "parentSkillUid": null,
+        "prefLabel": "Data Mining",
+        "prettyName": "Data Mining",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "jobTile": {
+      "job": {
+        "id": "1847242915104536047",
+        "ciphertext": "~021847242915104536047",
+        "jobType": "FIXED",
+        "weeklyRetainerBudget": null,
+        "hourlyBudgetMax": null,
+        "hourlyBudgetMin": null,
+        "hourlyEngagementType": null,
+        "contractorTier": "EntryLevel",
+        "sourcingTimestamp": null,
+        "createTime": "2024-10-18T11:46:46.012Z",
+        "publishTime": "2024-10-18T11:46:46.326Z",
+        "hourlyEngagementDuration": null,
+        "fixedPriceAmount": {
+          "isoCurrencyCode": null,
+          "amount": "200.0"
+        },
+        "fixedPriceEngagementDuration": {
+          "id": "474250516458926083",
+          "rid": 4,
+          "label": "Less than 1 month",
+          "weeks": 3,
+          "ctime": "2014-06-04T17:59:10.123Z",
+          "mtime": "2014-06-04T17:59:10.123Z"
+        }
+      }
+    }
+  },
+  {
+    "id": "1847232211293432013",
+    "title": "Real Estate H^Website^H that H^scrapes^H other H^websites^H",
+    "description": "Real Estate H^Scraper^H\n\nWe want to create a tool that H^scrapes^H house listings from all real estate H^websites^H in Sweden (including both new and upcoming listings) and gathers the data on a new platform.\n\nExample H^Websites^H:\n\nNotar.se\nInnerstadsspecialisten.se\nFastighetsbyran.se\nErikolsson.se\n\nFor the New Platform: The platform should include all filters available on the original H^sites^H, such as:\n- Map\n- Area\n- Price\n- Size\n- And other relevant filters\n\nFor reference, you can see an example of filters and layout on Hemnet.se.",
+    "relevanceEncoded": "{\"position\":\"1\"}",
+    "ontologySkills": [
+      {
+        "uid": "1031626730405085184",
+        "parentSkillUid": null,
+        "prefLabel": "Data Scraping",
+        "prettyName": "Data Scraping",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1052162208999198724",
+        "parentSkillUid": null,
+        "prefLabel": "WordPress",
+        "prettyName": "WordPress",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "jobTile": {
+      "job": {
+        "id": "1847232211293432013",
+        "ciphertext": "~021847232211293432013",
+        "jobType": "HOURLY",
+        "weeklyRetainerBudget": null,
+        "hourlyBudgetMax": null,
+        "hourlyBudgetMin": null,
+        "hourlyEngagementType": "FULL_TIME",
+        "contractorTier": "ExpertLevel",
+        "sourcingTimestamp": null,
+        "createTime": "2024-10-18T11:04:13.955Z",
+        "publishTime": "2024-10-18T11:04:14.283Z",
+        "hourlyEngagementDuration": {
+          "rid": 1,
+          "label": "More than 6 months",
+          "weeks": 52,
+          "mtime": "2014-06-04T17:59:10.123Z",
+          "ctime": "2014-06-04T17:59:10.123Z"
+        },
+        "fixedPriceAmount": null,
+        "fixedPriceEngagementDuration": null
+      }
+    }
+  },
+  {
+    "id": "1847038145275689932",
+    "title": "Generate a list of prospects/leads of Cosmetic Doctors ",
+    "description": "About us: Exclusive digital marketing agency tailored to cosmetic surgeons \n\nWe're looking to generate and increase the number of leads for our sales team. \n\nThis project includes the following: \n● Find contact info of suitable prospects \n● Compile accurate list in Google Sheets or Microsoft Excel \n● Share your list of screened prospects and contact info with the sales team\n\nTarget: Australia, United States, Canada \n\nContact info need: \n● Name (Must be like this: \"John\" not: JOHN, JoHN, john) \n● Title ● Company \n● Work email \n● Phone number (If available) \n● LinkedIn profile \n● H^Website^H\n\nThis project requires: \nSeeking Expert Data Miners for Lead Generation Project\nWe are a marketing agency specializing in the cosmetic surgery industry, and we're looking for experienced data miners to build a high-quality lead list for our cold outreach campaigns.\n\n\nIn your proposal, please share a brief summary of your experience, including a one-minute audio self-introduction. \n\nImportant Notes*\n● Emails must be real emails, they will be checked using an email verification software. \n● In your application please provide the price per lead you can deliver us \n● In your proposal please provide a sample of 10 leads. \n\nWe’re looking for a hardworking, honest and detail-oriented individual. This is an ongoing job if hired your services will be used on an ongoing basis. \n\nPreferred qualifications: \nEnglish level: Fluent\nLocation: Ukraine, Philippines, Russia, \n\nSkills: \n● Data Mining \n● Data H^Scraping^H \n● Internet Research \n● Lead Generation\n● Spreadsheets \n● H^Web^H H^Scraping^H \n\nProject Budget $50\n\nIndustries (5000, 1000 each) \nMedical: \nPlastic Surgeons \nDentist \nChiropractors \nHypnosis Doctor\nHair Transplant Surgeons",
+    "relevanceEncoded": "{\"position\":\"34\"}",
+    "ontologySkills": [
+      {
+        "uid": "1031626730405085184",
+        "parentSkillUid": null,
+        "prefLabel": "Data Scraping",
+        "prettyName": "Data Scraping",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1534904453491408896",
+        "parentSkillUid": null,
+        "prefLabel": "List Building",
+        "prettyName": "List Building",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626753582809088",
+        "parentSkillUid": null,
+        "prefLabel": "Lead Generation",
+        "prettyName": "Lead Generation",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626730287644672",
+        "parentSkillUid": null,
+        "prefLabel": "Data Mining",
+        "prettyName": "Data Mining",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1534904229452660736",
+        "parentSkillUid": null,
+        "prefLabel": "Prospect List",
+        "prettyName": "Prospect List",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "jobTile": {
+      "job": {
+        "id": "1847038145275689932",
+        "ciphertext": "~021847038145275689932",
+        "jobType": "FIXED",
+        "weeklyRetainerBudget": null,
+        "hourlyBudgetMax": null,
+        "hourlyBudgetMin": null,
+        "hourlyEngagementType": null,
+        "contractorTier": "IntermediateLevel",
+        "sourcingTimestamp": null,
+        "createTime": "2024-10-17T22:13:04.996Z",
+        "publishTime": "2024-10-17T22:54:21.800Z",
+        "hourlyEngagementDuration": null,
+        "fixedPriceAmount": {
+          "isoCurrencyCode": null,
+          "amount": "50.0"
+        },
+        "fixedPriceEngagementDuration": {
+          "id": "474250516458926083",
+          "rid": 4,
+          "label": "Less than 1 month",
+          "weeks": 3,
+          "ctime": "2014-06-04T17:59:10.123Z",
+          "mtime": "2014-06-04T17:59:10.123Z"
+        }
+      }
+    }
+  },
+  {
+    "id": "1847048442207729433",
+    "title": "Data H^Scraper^H Needed for Real Estate and Insurance Leads",
+    "description": "We are seeking an experienced data H^scraper^H to collect leads related to real estate, home insurance adjusters, and startups. The ideal candidate will have a strong understanding of H^web^H H^scraping^H tools and techniques to extract relevant data efficiently. You will be responsible for compiling a list of high-quality leads that can drive business growth. If you are detail-oriented, have experience in data mining, and can deliver results promptly, we would love to hear from you.",
+    "relevanceEncoded": "{\"position\":\"35\"}",
+    "ontologySkills": [
+      {
+        "uid": "1031626730405085184",
+        "parentSkillUid": null,
+        "prefLabel": "Data Scraping",
+        "prettyName": "Data Scraping",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1031626753582809088",
+        "parentSkillUid": null,
+        "prefLabel": "Lead Generation",
+        "prettyName": "Lead Generation",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626730136649728",
+        "parentSkillUid": null,
+        "prefLabel": "Data Entry",
+        "prettyName": "Data Entry",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626730287644672",
+        "parentSkillUid": null,
+        "prefLabel": "Data Mining",
+        "prettyName": "Data Mining",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "jobTile": {
+      "job": {
+        "id": "1847048442207729433",
+        "ciphertext": "~021847048442207729433",
+        "jobType": "HOURLY",
+        "weeklyRetainerBudget": null,
+        "hourlyBudgetMax": null,
+        "hourlyBudgetMin": null,
+        "hourlyEngagementType": "PART_TIME",
+        "contractorTier": "IntermediateLevel",
+        "sourcingTimestamp": null,
+        "createTime": "2024-10-17T22:53:59.981Z",
+        "publishTime": "2024-10-17T22:54:00.219Z",
+        "hourlyEngagementDuration": {
+          "rid": 3,
+          "label": "1 to 3 months",
+          "weeks": 9,
+          "mtime": "2014-06-04T17:59:10.123Z",
+          "ctime": "2014-06-04T17:59:10.123Z"
+        },
+        "fixedPriceAmount": null,
+        "fixedPriceEngagementDuration": null
+      }
+    }
+  },
+  {
+    "id": "1847037821736284386",
+    "title": "Looking for a professional or agency capable of generating leads from scratch",
+    "description": "We are in the need for a long term lead generation expert or team capable to reach out businesses online, call them and read a script verbatim to prepare the decision makers for a 2nd call. We can ONLY hire people or call centers capable to provide their own call system (dialer) No Skype or google callers will be considered\n\nYou or agents will get a basic hourly salary however, everyone's permanency on this job depends on results. Agents should create 10+ leads per day and 3+ of their leads need to be verified by our verification team. \n\nYou o yourr team needs:\n\n-Cold calling experience\n-Hard working attitude\n-Good English skills\n-Basic computer skills\n-Capability to work 8:00 AM to 4:00 PM Pacific time (U.S.A)\n\nYour team will find our leads by calling H^sites^H like: Yelp, Manta, Superpages, Google, Maps, Yellow Pages, Bing Places. Once they read the short script to the decision maker they just need to move on to the next call. (It's a simple task)\n\nIf this job description sounds like your team, you are more than welcome to apply and hopefully we can do this job together!",
+    "relevanceEncoded": "{\"position\":\"36\"}",
+    "ontologySkills": [
+      {
+        "uid": "1031626730405085184",
+        "parentSkillUid": null,
+        "prefLabel": "Data Scraping",
+        "prettyName": "Data Scraping",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1110580625235496960",
+        "parentSkillUid": null,
+        "prefLabel": "Sales & Marketing",
+        "prettyName": "Sales & Marketing",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1549040755079516160",
+        "parentSkillUid": null,
+        "prefLabel": "Appointment Setting",
+        "prettyName": "Appointment Setting",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626753582809088",
+        "parentSkillUid": null,
+        "prefLabel": "Lead Generation",
+        "prettyName": "Lead Generation",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626776445960192",
+        "parentSkillUid": null,
+        "prefLabel": "Sales",
+        "prettyName": "Sales",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1534904229452660736",
+        "parentSkillUid": null,
+        "prefLabel": "Prospect List",
+        "prettyName": "Prospect List",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626756493656064",
+        "parentSkillUid": null,
+        "prefLabel": "Marketing Strategy",
+        "prettyName": "Marketing Strategy",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626730136649728",
+        "parentSkillUid": null,
+        "prefLabel": "Data Entry",
+        "prettyName": "Data Entry",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "jobTile": {
+      "job": {
+        "id": "1847037821736284386",
+        "ciphertext": "~021847037821736284386",
+        "jobType": "HOURLY",
+        "weeklyRetainerBudget": null,
+        "hourlyBudgetMax": null,
+        "hourlyBudgetMin": null,
+        "hourlyEngagementType": "FULL_TIME",
+        "contractorTier": "ExpertLevel",
+        "sourcingTimestamp": null,
+        "createTime": "2024-10-17T22:11:47.868Z",
+        "publishTime": "2024-10-17T22:11:48.338Z",
+        "hourlyEngagementDuration": {
+          "rid": 1,
+          "label": "More than 6 months",
+          "weeks": 52,
+          "mtime": "2014-06-04T17:59:10.123Z",
+          "ctime": "2014-06-04T17:59:10.123Z"
+        },
+        "fixedPriceAmount": null,
+        "fixedPriceEngagementDuration": null
+      }
+    }
+  },
+  {
+    "id": "1846985188960108760",
+    "title": "H^Scrape^H Emails",
+    "description": "I am looking for a fixed price proposal for H^scraping^H all of the contacts from he following webpages and their subpages. The results will be placed into a Google Sheet with the following columns:\nSchool Name, First Name, Last Name, Title, Email\n\nhttps://ellises.pwcs.edu/directory/index\nhttps://innovationes.pwcs.edu/directory/index\nhttps://mullenes.pwcs.edu/directory/index\nhttps://sinclaires.pwcs.edu/directory/index\nhttps://sudleyes.pwcs.edu/directory/index\nhttps://westgatees.pwcs.edu/directory/index\nhttps://unitybraxtonms.pwcs.edu/directory/index\nhttps://unityreedhs.pwcs.edu/directory/index\nhttps://newdirections.pwcs.edu/directory/index\nhttps://www.mapschool.org\nhttps://www.matthewscenter.org\nhttps://bennettes.pwcs.edu/directory/index\nhttps://parksidems.pwcs.edu/directory/index\nhttps://penningtonschool.pwcs.edu/directory/index\nhttps://allsaintsvaschool.org\nhttps://lochlomondes.pwcs.edu/directory/index\nhttps://signalhilles.pwcs.edu/directory/index\nhttps://yorkshirees.pwcs.edu/directory/index\nhttps://osbournparkhs.pwcs.edu/directory/index\nhttps://ashlandes.pwcs.edu/directory/index\nhttps://coleses.pwcs.edu/directory/index\nhttps://marshalle.pwcs.edu/directory/index\nhttps://bentonms.pwcs.edu/directory/index\nhttps://saundersms.pwcs.edu/directory/index\nhttps://colganhs.pwcs.edu/directory/index\nhttps://independenthillschool.pwcs.edu/directory/index\nhttps://bristowrunes.pwcs.edu/directory/index\nhttps://cedarpointes.pwcs.edu/directory/index\nhttps://chrisyunges.pwcs.edu/directory/index\nhttps://pineybranche.pwcs.edu/directory/index\nhttps://victoryes.pwcs.edu/directory/index\nhttps://marstellerms.pwcs.edu/directory/index\nhttps://www.bristowmontessori.com\nhttps://www.lintonhall.edu\nhttps://bucklandmillses.pwcs.edu/directory/index\nhttps://glenkirkes.pwcs.edu/directory/index\nhttps://tyleres.pwcs.edu/directory/index\nhttps://bullrunms.pwcs.edu/directory/index\nhttps://gainesvillems.pwcs.edu/directory/index\nhttps://gainesvillehs.pwcs.edu/directory/index\nhttps://www.lakemanassasacademy.com\nhttps://www.haymarketbaptist.org/preschool\nhttps://alveyes.pwcs.edu/directory/index\nhttps://gravelyes.pwcs.edu/directory/index\nhttps://haymarketes.pwcs.edu/directory/index\nhttps://mountainviewes.pwcs.edu/directory/index\nhttps://reaganms.pwcs.edu/directory/index\nhttps://battlefieldhs.pwcs.edu/directory/index\nhttps://tclaywoodees.pwcs.edu/directory/index\nhttps://brentsvillehs.pwcs.edu/directory/index\nhttps://patrioths.pwcs.edu/directory/index\nhttps://nokesvilleschool.pwcs.edu/directory/index\nhttps://hendersones.pwcs.edu/directory/index\nhttps://montclaires.pwcs.edu/directory/index\nhttps://pattiees.pwcs.edu/directory/index\nhttps://covington-harperes.pwcs.edu/directory/index\nhttps://dumfrieses.pwcs.edu/directory/index\nhttps://marywilliamses.pwcs.edu/directory/index\nhttps://swanscreekes.pwcs.edu/directory/index\nhttps://pattiees.pwcs.edu/directory/index\nhttps://potomacms.pwcs.edu/directory/index\nhttps://potomacshoresms.pwcs.edu/directory/index\nhttps://potomachs.pwcs.edu/directory/index\nhttps://trianglees.pwcs.edu/directory/index\nhttps://grahamparkms.pwcs.edu/directory/index\nhttps://ccstriangle.org\nhttps://belmontes.pwcs.edu/directory/index\nhttps://featherstonees.pwcs.edu/directory/index\nhttps://kilbyes.pwcs.edu/directory/index\nhttps://leesylvaniaes.pwcs.edu/directory/index\nhttps://marumscohill.pwcs.edu/directory/index\nhttps://potomacviewes.pwcs.edu/directory/index\nhttps://riveroakses.pwcs.edu/directory/index\nhttps://vaughanes.pwcs.edu/directory/index\nhttps://lynnms.pwcs.edu/directory/index\nhttps://ripponms.pwcs.edu/directory/index\nhttps://woodbridgems.pwcs.edu/directory/index\nhttps://freedomhs.pwcs.edu/directory/index\nhttps://porterschool.pwcs.edu/directory/index\nhttps://cardinalmontessorischool.com\nhttps://antietames.pwcs.edu/directory/index\nhttps://jenkinses.pwcs.edu/directory/index\nhttps://lakeridgees.pwcs.edu/directory/index\nhttps://occoquanes.pwcs.edu/directory/index\nhttps://oldbridgees.pwcs.edu/directory/index\nhttps://rockledgees.pwcs.edu/directory/index\nhttps://springwoodses.pwcs.edu/directory/index\nhttps://westridgees.pwcs.edu/directory/index\nhttps://lakeridgems.pwcs.edu/directory/index\nhttps://garfieldhs.pwcs.edu/directory/index\nhttps://woodbridgehs.pwcs.edu/directory/index\nhttps://christchapelacademy.org\nNo official H^website^H found\nhttps://ccawoodbridge.org\nhttps://princewilliamacademy.com\nhttps://belaires.pwcs.edu/directory/index\nhttps://dalecityes.pwcs.edu/directory/index\nhttps://enterprisees.pwcs.edu/directory/index\nhttps://fitzgeraldes.pwcs.edu/directory/index\nhttps://kerrydales.pwcs.edu/directory/index\nhttps://kinges.pwcs.edu/directory/index\nhttps://kylewilsones.pwcs.edu/directory/index\nhttps://mcauliffees.pwcs.edu/directory/index\nhttps://minnievillees.pwcs.edu/directory/index\nhttps://neabscoes.pwcs.edu/directory/index\nhttps://pennes.pwcs.edu/directory/index\nhttps://rosaparkes.pwcs.edu/directory/index\nhttps://bevillems.pwcs.edu/directory/index\nhttps://hamptonms.pwcs.edu/directory/index\nhttps://forestparkhs.pwcs.edu/directory/index\nhttps://hyltonhs.pwcs.edu/directory/index\nhttps://www.dalecitychristian.com/academy\nhttps://www.ecspanthers.org\nhttps://www.hcsva.org\nhttps://holyfamilydalecity.org\nhttps://www.meritschools.com/prince-william",
+    "relevanceEncoded": "{\"position\":\"37\"}",
+    "ontologySkills": [
+      {
+        "uid": "1031626730405085184",
+        "parentSkillUid": null,
+        "prefLabel": "Data Scraping",
+        "prettyName": "Data Scraping",
+        "freeText": null,
+        "highlighted": true
+      }
+    ],
+    "jobTile": {
+      "job": {
+        "id": "1846985188960108760",
+        "ciphertext": "~021846985188960108760",
+        "jobType": "FIXED",
+        "weeklyRetainerBudget": null,
+        "hourlyBudgetMax": null,
+        "hourlyBudgetMin": null,
+        "hourlyEngagementType": null,
+        "contractorTier": "IntermediateLevel",
+        "sourcingTimestamp": null,
+        "createTime": "2024-10-17T18:42:39.257Z",
+        "publishTime": "2024-10-17T21:42:42.368Z",
+        "hourlyEngagementDuration": null,
+        "fixedPriceAmount": {
+          "isoCurrencyCode": null,
+          "amount": "100.0"
+        },
+        "fixedPriceEngagementDuration": {
+          "id": "474250516458926083",
+          "rid": 4,
+          "label": "Less than 1 month",
+          "weeks": 3,
+          "ctime": "2014-06-04T17:59:10.123Z",
+          "mtime": "2014-06-04T17:59:10.123Z"
+        }
+      }
+    }
+  },
+  {
+    "id": "1847028414480984793",
+    "title": "Data Collection Specialist for U.S. Golf Courses",
+    "description": "We are seeking a detail-oriented and experienced data researcher to compile a comprehensive dataset of all 15,961 golf courses across the United States. The selected candidate will be responsible for gathering and organizing the following information for each course:\n\nCourse Name\nAddress (Street, City, State, Zip Code)\nStatus (Public, Private, Semi-Private)\nH^Website^H URL\nH^Website^H Booking Link URL\nCurrent Online Tee Sheet Vendor\nCurrent Waitlist Vendor (if applicable)\nCurrent Management Company (if applicable)\nTee Times Listed on GolfNow (Yes/No)\nTee Times Listed on Supreme Golf (Yes/No)\n\nRequirements:\n- Strong research and data collection skills\n- Experience with Excel or Google Sheets for organizing data\n\nDeliverables:\n- A fully populated spreadsheet with the above details for each golf course in the U.S. (15,961 total).\n\nPlease include in your proposal:\n- An estimated timeframe for completing the project\n- A brief description of any similar data collection or research work you've done in the past\n- Any tools or methods you plan to use to ensure the data is accurate and up to date",
+    "relevanceEncoded": "{\"position\":\"38\"}",
+    "ontologySkills": [
+      {
+        "uid": "1031626730405085184",
+        "parentSkillUid": null,
+        "prefLabel": "Data Scraping",
+        "prettyName": "Data Scraping",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1031626730287644672",
+        "parentSkillUid": null,
+        "prefLabel": "Data Mining",
+        "prettyName": "Data Mining",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626758615973888",
+        "parentSkillUid": null,
+        "prefLabel": "Microsoft Excel",
+        "prettyName": "Microsoft Excel",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "jobTile": {
+      "job": {
+        "id": "1847028414480984793",
+        "ciphertext": "~021847028414480984793",
+        "jobType": "HOURLY",
+        "weeklyRetainerBudget": null,
+        "hourlyBudgetMax": "35.0",
+        "hourlyBudgetMin": "15.0",
+        "hourlyEngagementType": "NOT_SURE",
+        "contractorTier": "ExpertLevel",
+        "sourcingTimestamp": null,
+        "createTime": "2024-10-17T21:34:25.089Z",
+        "publishTime": "2024-10-17T21:34:25.400Z",
+        "hourlyEngagementDuration": {
+          "rid": 3,
+          "label": "1 to 3 months",
+          "weeks": 9,
+          "mtime": "2014-06-04T17:59:10.123Z",
+          "ctime": "2014-06-04T17:59:10.123Z"
+        },
+        "fixedPriceAmount": null,
+        "fixedPriceEngagementDuration": null
+      }
+    }
+  },
+  {
+    "id": "1847027110324581871",
+    "title": "Data H^Scraping^H",
+    "description": "We need help data H^scraping^H the internet for leads. We sell high end architectural products to builders, architects and designers and want to find ways of H^scraping^H these resources from the H^web^H.",
+    "relevanceEncoded": "{\"position\":\"39\"}",
+    "ontologySkills": [
+      {
+        "uid": "1031626730405085184",
+        "parentSkillUid": null,
+        "prefLabel": "Data Scraping",
+        "prettyName": "Data Scraping",
+        "freeText": null,
+        "highlighted": true
+      }
+    ],
+    "jobTile": {
+      "job": {
+        "id": "1847027110324581871",
+        "ciphertext": "~021847027110324581871",
+        "jobType": "HOURLY",
+        "weeklyRetainerBudget": null,
+        "hourlyBudgetMax": "40.0",
+        "hourlyBudgetMin": "20.0",
+        "hourlyEngagementType": "PART_TIME",
+        "contractorTier": "IntermediateLevel",
+        "sourcingTimestamp": null,
+        "createTime": "2024-10-17T21:29:14.058Z",
+        "publishTime": "2024-10-17T21:29:15.928Z",
+        "hourlyEngagementDuration": {
+          "rid": 3,
+          "label": "1 to 3 months",
+          "weeks": 9,
+          "mtime": "2014-06-04T17:59:10.123Z",
+          "ctime": "2014-06-04T17:59:10.123Z"
+        },
+        "fixedPriceAmount": null,
+        "fixedPriceEngagementDuration": null
+      }
+    }
+  },
+  {
     "id": "1847026257811918629",
     "title": "H^Web^H Data Extraction Specialist Needed",
     "description": "I am looking for a reliable freelancer to pull specific data from a designated H^website^H. The ideal candidate will have experience with H^web^H H^scraping^H and data extraction techniques. You will be responsible for gathering accurate and relevant data, which may include text, images, and other media. Proficiency in tools such as Python, php etc. If you have a keen eye for detail and can deliver high-quality results in a timely manner, I would love to hear from you!",
@@ -2980,578 +3472,6 @@
         },
         "fixedPriceAmount": null,
         "fixedPriceEngagementDuration": null
-      }
-    }
-  },
-  {
-    "id": "1847120426146033890",
-    "title": "Need addresses from Real estate MLS county H^websites^H",
-    "description": "I need someone to generate leads of mailing addresses in a specific zip code, county or city. Must have access to the mls and know how to look up info on the counties H^website^H.",
-    "relevanceEncoded": "{\"position\":\"19\"}",
-    "ontologySkills": [
-      {
-        "uid": "1031626730405085184",
-        "parentSkillUid": null,
-        "prefLabel": "Data Scraping",
-        "prettyName": "Data Scraping",
-        "freeText": null,
-        "highlighted": true
-      },
-      {
-        "uid": "1031626730136649728",
-        "parentSkillUid": null,
-        "prefLabel": "Data Entry",
-        "prettyName": "Data Entry",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626753582809088",
-        "parentSkillUid": null,
-        "prefLabel": "Lead Generation",
-        "prettyName": "Lead Generation",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1534904453491408896",
-        "parentSkillUid": null,
-        "prefLabel": "List Building",
-        "prettyName": "List Building",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626758615973888",
-        "parentSkillUid": null,
-        "prefLabel": "Microsoft Excel",
-        "prettyName": "Microsoft Excel",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626730287644672",
-        "parentSkillUid": null,
-        "prefLabel": "Data Mining",
-        "prettyName": "Data Mining",
-        "freeText": null,
-        "highlighted": false
-      }
-    ],
-    "jobTile": {
-      "job": {
-        "id": "1847120426146033890",
-        "ciphertext": "~021847120426146033890",
-        "jobType": "FIXED",
-        "weeklyRetainerBudget": null,
-        "hourlyBudgetMax": null,
-        "hourlyBudgetMin": null,
-        "hourlyEngagementType": null,
-        "contractorTier": "ExpertLevel",
-        "sourcingTimestamp": null,
-        "createTime": "2024-10-18T03:40:02.301Z",
-        "publishTime": "2024-10-18T03:40:02.498Z",
-        "hourlyEngagementDuration": null,
-        "fixedPriceAmount": {
-          "isoCurrencyCode": null,
-          "amount": "1000.0"
-        },
-        "fixedPriceEngagementDuration": {
-          "id": "474250516458926082",
-          "rid": 3,
-          "label": "1 to 3 months",
-          "weeks": 9,
-          "ctime": "2014-06-04T17:59:10.123Z",
-          "mtime": "2014-06-04T17:59:10.123Z"
-        }
-      }
-    }
-  },
-  {
-    "id": "1847114615196828247",
-    "title": "H^Web^H H^scraper^H executable file",
-    "description": "I need someone to create a H^web^H H^scraper^H that pulls data from a H^website^H.  This H^website^H updates with data everyday.  I need a executable file that where I can set a date range to pull data for.  \n\nSomeone made this for me before but it stopped working.  I've attached it here.",
-    "relevanceEncoded": "{\"position\":\"20\"}",
-    "ontologySkills": [
-      {
-        "uid": "1031626730405085184",
-        "parentSkillUid": null,
-        "prefLabel": "Data Scraping",
-        "prettyName": "Data Scraping",
-        "freeText": null,
-        "highlighted": true
-      },
-      {
-        "uid": "996364628025274386",
-        "parentSkillUid": null,
-        "prefLabel": "Python",
-        "prettyName": "Python",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626730153426944",
-        "parentSkillUid": null,
-        "prefLabel": "Data Extraction",
-        "prettyName": "Data Extraction",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626717876699136",
-        "parentSkillUid": null,
-        "prefLabel": "Automation",
-        "prettyName": "Automation",
-        "freeText": null,
-        "highlighted": false
-      }
-    ],
-    "jobTile": {
-      "job": {
-        "id": "1847114615196828247",
-        "ciphertext": "~021847114615196828247",
-        "jobType": "FIXED",
-        "weeklyRetainerBudget": null,
-        "hourlyBudgetMax": null,
-        "hourlyBudgetMin": null,
-        "hourlyEngagementType": null,
-        "contractorTier": "EntryLevel",
-        "sourcingTimestamp": null,
-        "createTime": "2024-10-18T03:16:56.944Z",
-        "publishTime": "2024-10-18T03:16:57.481Z",
-        "hourlyEngagementDuration": null,
-        "fixedPriceAmount": {
-          "isoCurrencyCode": null,
-          "amount": "100.0"
-        },
-        "fixedPriceEngagementDuration": {
-          "id": "474250516458926083",
-          "rid": 4,
-          "label": "Less than 1 month",
-          "weeks": 3,
-          "ctime": "2014-06-04T17:59:10.123Z",
-          "mtime": "2014-06-04T17:59:10.123Z"
-        }
-      }
-    }
-  },
-  {
-    "id": "1847113849835094232",
-    "title": "H^Web^H Data H^Scraping^H & WooCommerce Manual Data Entry Specialist",
-    "description": "We are seeking an experienced professional to assist with H^web^H data H^scraping^H and manual data entry into our WooCommerce platform. The ideal candidate will have a strong understanding of data extraction techniques and proven experience working with e-commerce platforms. Your tasks will include gathering product information from various H^websites^H and accurately inputting this data into our WooCommerce store. Attention to detail and efficiency are crucial for this role.",
-    "relevanceEncoded": "{\"position\":\"21\"}",
-    "ontologySkills": [
-      {
-        "uid": "1031626730405085184",
-        "parentSkillUid": null,
-        "prefLabel": "Data Scraping",
-        "prettyName": "Data Scraping",
-        "freeText": null,
-        "highlighted": true
-      },
-      {
-        "uid": "1031626730136649728",
-        "parentSkillUid": null,
-        "prefLabel": "Data Entry",
-        "prettyName": "Data Entry",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626758615973888",
-        "parentSkillUid": null,
-        "prefLabel": "Microsoft Excel",
-        "prettyName": "Microsoft Excel",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626730287644672",
-        "parentSkillUid": null,
-        "prefLabel": "Data Mining",
-        "prettyName": "Data Mining",
-        "freeText": null,
-        "highlighted": false
-      }
-    ],
-    "jobTile": {
-      "job": {
-        "id": "1847113849835094232",
-        "ciphertext": "~021847113849835094232",
-        "jobType": "FIXED",
-        "weeklyRetainerBudget": null,
-        "hourlyBudgetMax": null,
-        "hourlyBudgetMin": null,
-        "hourlyEngagementType": null,
-        "contractorTier": "IntermediateLevel",
-        "sourcingTimestamp": null,
-        "createTime": "2024-10-18T03:13:54.369Z",
-        "publishTime": "2024-10-18T03:13:54.942Z",
-        "hourlyEngagementDuration": null,
-        "fixedPriceAmount": {
-          "isoCurrencyCode": null,
-          "amount": "500.0"
-        },
-        "fixedPriceEngagementDuration": {
-          "id": "474250516458926082",
-          "rid": 3,
-          "label": "1 to 3 months",
-          "weeks": 9,
-          "ctime": "2014-06-04T17:59:10.123Z",
-          "mtime": "2014-06-04T17:59:10.123Z"
-        }
-      }
-    }
-  },
-  {
-    "id": "1847073983166084889",
-    "title": "H^Scrape^H Slack Channel, and Enrich the member information",
-    "description": "H^Scrape^H a public Slack channel (the URL will be provided to you) that consists of ~3,200 members. Download the member information in a Google Sheet, then enrich it with demographic information using Google Search, Linkedin, Github, Apollo, etc. Data accuracy is critical. See below for data fields for the enrichment:\n\nFirst Name \nLast Name \nWork Email\nJob Title \nLinkedIn URL \nGithub URL\nCompany domain (e.g. apple.com) \nCompany Linkedin URL",
-    "relevanceEncoded": "{\"position\":\"27\"}",
-    "ontologySkills": [
-      {
-        "uid": "1504884906003529729",
-        "parentSkillUid": null,
-        "prefLabel": "Web Scraping",
-        "prettyName": "Web Scraping",
-        "freeText": null,
-        "highlighted": true
-      },
-      {
-        "uid": "1031626730405085184",
-        "parentSkillUid": null,
-        "prefLabel": "Data Scraping",
-        "prettyName": "Data Scraping",
-        "freeText": null,
-        "highlighted": true
-      },
-      {
-        "uid": "1031626730287644672",
-        "parentSkillUid": null,
-        "prefLabel": "Data Mining",
-        "prettyName": "Data Mining",
-        "freeText": null,
-        "highlighted": false
-      }
-    ],
-    "jobTile": {
-      "job": {
-        "id": "1847073983166084889",
-        "ciphertext": "~021847073983166084889",
-        "jobType": "FIXED",
-        "weeklyRetainerBudget": null,
-        "hourlyBudgetMax": null,
-        "hourlyBudgetMin": null,
-        "hourlyEngagementType": null,
-        "contractorTier": "IntermediateLevel",
-        "sourcingTimestamp": null,
-        "createTime": "2024-10-18T00:35:29.431Z",
-        "publishTime": "2024-10-18T00:47:54.194Z",
-        "hourlyEngagementDuration": null,
-        "fixedPriceAmount": {
-          "isoCurrencyCode": null,
-          "amount": "1000.0"
-        },
-        "fixedPriceEngagementDuration": {
-          "id": "474250516458926083",
-          "rid": 4,
-          "label": "Less than 1 month",
-          "weeks": 3,
-          "ctime": "2014-06-04T17:59:10.123Z",
-          "mtime": "2014-06-04T17:59:10.123Z"
-        }
-      }
-    }
-  },
-  {
-    "id": "1847067816930496293",
-    "title": "H^Web^H H^scraping^H project",
-    "description": "Project Overview: \nWe are looking at developing a scalable H^web^H H^scraping^H system to extract approximately 1 million \nhigh-quality product images for an AI image model. The system will primarily target 1 specified H^website^H, given its extensive collection of images, while being adaptable to include \nadditional sources as needed.",
-    "relevanceEncoded": "{\"position\":\"28\"}",
-    "ontologySkills": [
-      {
-        "uid": "1031626730405085184",
-        "parentSkillUid": null,
-        "prefLabel": "Data Scraping",
-        "prettyName": "Data Scraping",
-        "freeText": null,
-        "highlighted": true
-      },
-      {
-        "uid": "1031626730287644672",
-        "parentSkillUid": null,
-        "prefLabel": "Data Mining",
-        "prettyName": "Data Mining",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626730136649728",
-        "parentSkillUid": null,
-        "prefLabel": "Data Entry",
-        "prettyName": "Data Entry",
-        "freeText": null,
-        "highlighted": false
-      }
-    ],
-    "jobTile": {
-      "job": {
-        "id": "1847067816930496293",
-        "ciphertext": "~021847067816930496293",
-        "jobType": "HOURLY",
-        "weeklyRetainerBudget": null,
-        "hourlyBudgetMax": "35.0",
-        "hourlyBudgetMin": "15.0",
-        "hourlyEngagementType": "PART_TIME",
-        "contractorTier": "ExpertLevel",
-        "sourcingTimestamp": null,
-        "createTime": "2024-10-18T00:10:59.327Z",
-        "publishTime": "2024-10-18T00:11:00.943Z",
-        "hourlyEngagementDuration": {
-          "rid": 4,
-          "label": "Less than 1 month",
-          "weeks": 3,
-          "mtime": "2014-06-04T17:59:10.123Z",
-          "ctime": "2014-06-04T17:59:10.123Z"
-        },
-        "fixedPriceAmount": null,
-        "fixedPriceEngagementDuration": null
-      }
-    }
-  },
-  {
-    "id": "1847067747318561740",
-    "title": "Populate a spreadsheet with specific information from a H^website^H",
-    "description": "Populate a spreadsheet based on the instructions provided. Instructions attached, spreadsheet to be provided once a successful person has been found. \n\nPlease provide your estimated number of hours to complete this job or a fixed price.\n\n",
-    "relevanceEncoded": "{\"position\":\"29\"}",
-    "ontologySkills": [
-      {
-        "uid": "1031626730405085184",
-        "parentSkillUid": null,
-        "prefLabel": "Data Scraping",
-        "prettyName": "Data Scraping",
-        "freeText": null,
-        "highlighted": true
-      },
-      {
-        "uid": "1031626730136649728",
-        "parentSkillUid": null,
-        "prefLabel": "Data Entry",
-        "prettyName": "Data Entry",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1110580468284641280",
-        "parentSkillUid": null,
-        "prefLabel": "Accuracy Verification",
-        "prettyName": "Accuracy Verification",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1110580732286717952",
-        "parentSkillUid": null,
-        "prefLabel": "Virtual Assistance",
-        "prettyName": "Virtual Assistance",
-        "freeText": null,
-        "highlighted": false
-      }
-    ],
-    "jobTile": {
-      "job": {
-        "id": "1847067747318561740",
-        "ciphertext": "~021847067747318561740",
-        "jobType": "HOURLY",
-        "weeklyRetainerBudget": null,
-        "hourlyBudgetMax": "8.0",
-        "hourlyBudgetMin": "4.0",
-        "hourlyEngagementType": "PART_TIME",
-        "contractorTier": "EntryLevel",
-        "sourcingTimestamp": null,
-        "createTime": "2024-10-18T00:10:42.725Z",
-        "publishTime": "2024-10-18T00:10:43.245Z",
-        "hourlyEngagementDuration": {
-          "rid": 4,
-          "label": "Less than 1 month",
-          "weeks": 3,
-          "mtime": "2014-06-04T17:59:10.123Z",
-          "ctime": "2014-06-04T17:59:10.123Z"
-        },
-        "fixedPriceAmount": null,
-        "fixedPriceEngagementDuration": null
-      }
-    }
-  },
-  {
-    "id": "1847057293667991768",
-    "title": "Land Zoning Data - US",
-    "description": "I am looking for a way to get land Zoning Data for the US, or specifically a state or two even. \n\nThere are H^sites^H out there that sell this data or give access via API. I.e. https://gridics.com/zoning-data-api\n\nI am not sure how they get it!",
-    "relevanceEncoded": "{\"position\":\"30\"}",
-    "ontologySkills": [
-      {
-        "uid": "1031626730405085184",
-        "parentSkillUid": null,
-        "prefLabel": "Data Scraping",
-        "prettyName": "Data Scraping",
-        "freeText": null,
-        "highlighted": true
-      },
-      {
-        "uid": "1031626730287644672",
-        "parentSkillUid": null,
-        "prefLabel": "Data Mining",
-        "prettyName": "Data Mining",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626741285109760",
-        "parentSkillUid": null,
-        "prefLabel": "GIS",
-        "prettyName": "GIS",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626715477557248",
-        "parentSkillUid": null,
-        "prefLabel": "ArcGIS",
-        "prettyName": "ArcGIS",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626724650500096",
-        "parentSkillUid": null,
-        "prefLabel": "Civil Engineering",
-        "prettyName": "Civil Engineering",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1281256069494816768",
-        "parentSkillUid": null,
-        "prefLabel": "Land Surveying",
-        "prettyName": "Land Surveying",
-        "freeText": null,
-        "highlighted": false
-      }
-    ],
-    "jobTile": {
-      "job": {
-        "id": "1847057293667991768",
-        "ciphertext": "~021847057293667991768",
-        "jobType": "HOURLY",
-        "weeklyRetainerBudget": null,
-        "hourlyBudgetMax": null,
-        "hourlyBudgetMin": null,
-        "hourlyEngagementType": "PART_TIME",
-        "contractorTier": "IntermediateLevel",
-        "sourcingTimestamp": null,
-        "createTime": "2024-10-17T23:29:10.359Z",
-        "publishTime": "2024-10-17T23:29:10.549Z",
-        "hourlyEngagementDuration": {
-          "rid": 3,
-          "label": "1 to 3 months",
-          "weeks": 9,
-          "mtime": "2014-06-04T17:59:10.123Z",
-          "ctime": "2014-06-04T17:59:10.123Z"
-        },
-        "fixedPriceAmount": null,
-        "fixedPriceEngagementDuration": null
-      }
-    }
-  },
-  {
-    "id": "1847045919319523544",
-    "title": "Automate Rideshare Dispatch System with Uber API and H^Web^H H^Scraping^H",
-    "description": "Must read the attached file.\nI am looking for an experienced developer to help automate a rideshare dispatch system that integrates with Uber's platform and communicates via a Telegram bot. The project involves using the Uber API for authentication, combined with H^web^H H^scraping^H to gather detailed ride information, and automating notifications to fleet drivers through Telegram.",
-    "relevanceEncoded": "{\"position\":\"31\"}",
-    "ontologySkills": [
-      {
-        "uid": "1031626730405085184",
-        "parentSkillUid": null,
-        "prefLabel": "Data Scraping",
-        "prettyName": "Data Scraping",
-        "freeText": null,
-        "highlighted": true
-      },
-      {
-        "uid": "1225465931507142656",
-        "parentSkillUid": null,
-        "prefLabel": "Beautiful Soup",
-        "prettyName": "Beautiful Soup",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626778631192576",
-        "parentSkillUid": null,
-        "prefLabel": "Selenium",
-        "prettyName": "Selenium",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "996364628025274386",
-        "parentSkillUid": null,
-        "prefLabel": "Python",
-        "prettyName": "Python",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1110580482322976768",
-        "parentSkillUid": null,
-        "prefLabel": "API",
-        "prettyName": "API",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1031626717876699136",
-        "parentSkillUid": null,
-        "prefLabel": "Automation",
-        "prettyName": "Automation",
-        "freeText": null,
-        "highlighted": false
-      },
-      {
-        "uid": "1484275080520978432",
-        "parentSkillUid": null,
-        "prefLabel": "Telegram",
-        "prettyName": "Telegram",
-        "freeText": null,
-        "highlighted": false
-      }
-    ],
-    "jobTile": {
-      "job": {
-        "id": "1847045919319523544",
-        "ciphertext": "~021847045919319523544",
-        "jobType": "FIXED",
-        "weeklyRetainerBudget": null,
-        "hourlyBudgetMax": null,
-        "hourlyBudgetMin": null,
-        "hourlyEngagementType": null,
-        "contractorTier": "ExpertLevel",
-        "sourcingTimestamp": null,
-        "createTime": "2024-10-17T22:43:58.516Z",
-        "publishTime": "2024-10-17T23:01:05.479Z",
-        "hourlyEngagementDuration": null,
-        "fixedPriceAmount": {
-          "isoCurrencyCode": null,
-          "amount": "150.0"
-        },
-        "fixedPriceEngagementDuration": {
-          "id": "474250516458926082",
-          "rid": 3,
-          "label": "1 to 3 months",
-          "weeks": 9,
-          "ctime": "2014-06-04T17:59:10.123Z",
-          "mtime": "2014-06-04T17:59:10.123Z"
-        }
       }
     }
   }
