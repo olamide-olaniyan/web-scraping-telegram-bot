@@ -8,7 +8,7 @@ dotenv.config();
 
 const TOKEN = process.env.TOKEN;
 const PORT = process.env.PORT || 5000;
-const POLLING_INTERVAL = 3 * 60 * 1000; // Poll every 10 minutes
+const POLLING_INTERVAL = 3 * 60 * 1000; // Poll every 3 minutes
 
 const app = express();
 const bot = new TelegramBot(TOKEN, { polling: true });
@@ -28,7 +28,7 @@ async function fetchUpworkJobs() {
     await pRetry(
       async () => {
         const offset = 0;
-        const count = 50;
+        const count = 10;
         const CHANNEL_ID = "@web_scraping_jobs";
 
         const gotScrapingRes = await gotScraping(
